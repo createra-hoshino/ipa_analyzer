@@ -64,7 +64,7 @@ end
 
 vputs "options: #{options}"
 
-raise 'No IPA specified' unless options[:ipa_path]
+raise 'No IPA specified (modified)' unless options[:ipa_path]
 raise 'IPA specified but file does not exist at the provided path' unless File.exist? options[:ipa_path]
 
 parsed_infos = {
